@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lina Andersson - Gallery</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <script src="portfolio.js"></script>
+</head>
+<body>
+
+<section id="content">
+    <nav id="menu">
+        <ul>
+            <li><a class="menuItem" id="start" href="index.html" > Home</a>
+            </li>
+            <!-- Work in progress
+            <li id="galleryLink">
+                <a class="menuItem" id="gallery" href="gallery.html" > Gallery</a>
+                <div class="dropdownContent" id="dropdownGallery">
+                    <a href="galleryPeople.html">People</a>
+                    <a href="#">Nature</a>
+                    <a href="#">Animals</a>
+                    <a href="#">Events</a>
+                    <a href="#">Other</a>
+                </div>
+            </li>-->
+            <li id="codeLink">
+                <a class="menuItem" id="code" href="code.html"> Code</a>
+                <div class="dropdownContent" id="dropdownCode">
+                    <a href="#">The Zoo</a>
+                    <a href="#">Concrete Jungle</a>
+                    <a href="#">Quiz Columbus</a>
+                    <a href="#">Traveler's Guide</a>
+                    <a href="#">Petshop</a>
+                </div>
+            </li>
+            <li id="aboutLink">
+                <a class="menuItem" id="about" href="about.html"> About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="positionSection">
+        <section id="positionContent">
+            <button class="albumContainer" data-toggle="modal" data-target="#showTheZoo">
+                    <img src="TheZooLogoThumbnail.png" class="albumPic" alt="Popup for  The Zoo">
+                    <p class="albumName"> The Zoo </p>
+            </button>
+
+
+                <button class="albumContainer" data-toggle="modal" data-target="#showConcrete">
+                    <img src="concreteJungleLogo.png" class="albumPic" alt="Popup for Concrete Jungle Project">
+                    <p class="albumName"> Concrete Jungle </p>
+                </button>
+
+
+
+                <button class="albumContainer" data-toggle="modal" data-target="#showColumbus">
+                    <img src="quizColumbusLogo.png" class="albumPic" alt="Popup for quiz columbus project">
+                    <p class="albumName"> Quiz Columbus </p>
+                </button>
+
+            <button class="albumContainer" data-toggle="modal" data-target="#showTravelers">
+                <img src="travelersLogo.png" class="albumPic" alt="Popup for quiz columbus project">
+                <p class="albumName"> Traveler's Guide </p>
+            </button>
+
+            <button class="albumContainer" data-toggle="modal" data-target="#showPetshop">
+                <img src="petshopLogo.png" class="albumPic" alt="Popup for quiz columbus project">
+                <p class="albumName"> Petshop </p>
+            </button>
+
+        </section>
+
+    </section>
+</section>
+
+<!-- Modal for The Zoo-->
+<div class="modal fade" id="showTheZoo" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modalHeader">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title albumName">The Zoo</h4>
+            </div>
+            <div class="modal-body projectParagraph">
+                <img src="z1.png" class="projectImage">
+                <b>Description</b></br>
+               Create your own zoo filled with animals ranging from cats to tigers, pandas, unicorns and dragons!
+                But as we all know it isn´t easy to keep track of all the animals, their age, gender and so on. So
+                to make it easier to manage your animals "The Zoo" was created. With this software you can see all your
+                animals and buy, sell, sort or check their status as you want to.
+
+                </br></br><b>Specifications</b>
+                </br>The project was done in Python and the program and design was all made by me.
+                The project was the final assignment in a course in programing technique at KTH/Stockholm university.
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-lg viewProjectButton" onclick="location.href = 'https://github.com/laijnaloo/TheZoo'">Preview code on GitHub</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal for Concrete Jungle-->
+<div class="modal fade" id="showConcrete" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modalHeader">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title albumName">Concrete Jungle</h4>
+            </div>
+            <div class="modal-body projectParagraph">
+                <img src="c1.png" class="projectImage">
+                <b>Description</b></br>
+                Making your home into something extraordinary doesn't have to be difficult or expensive. With a passion
+                for simple, yet beautiful design with only concrete the people at (the fictive) company Concrete Jungle
+                wanted a place to reach out with their products to new and old costumers. To do that, a prototype of a
+                responsive webshop was made where it is possible to see items, learn more about them and also see how
+                it looks when the items are in the cart.
+
+                </br></br><b>Specifications</b>
+                </br>The project was done in Javascript, HTML and CSS and the program and design was all made by me.
+                The project was the final assignment in a course in responsive webb design at Kristianstad University.
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-lg viewProjectButton" onclick="location.href = 'https://laijnaloo.github.io/ConcreteJungle/index.html'">Preview code on GitHub</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal for Quiz Columbus-->
+<div class="modal fade" id="showColumbus" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modalHeader">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title albumName">Quiz Columbus</h4>
+            </div>
+            <div class="modal-body projectParagraph">
+                <img src="q1.png" class="projectImage">
+                <b>Description</b></br>
+                Learning should be fun and one way to make it more fun is simply making a game out of it. So if you or
+                your kid wants to learn a little bit more about the adventureor Christopher Columbus this is the game
+                for you. With four options and 10 seconds to answer each question about this explorer you will get a fun,
+                yet informative game where you can compete with yourself or others by comparing the scores in the end
+                of the game.
+
+                </br></br><b>Specifications</b>
+                </br>The project was done in Python and the program and design was all made by me.
+                The project was a project in a course in multimedia programming at Stockholm University.
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-lg viewProjectButton" onclick="location.href = 'https://github.com/laijnaloo/QuizColumbus'">Preview code on GitHub</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Modal for Travelers guide-->
+<div class="modal fade" id="showTravelers" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modalHeader">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title albumName">Traveler's Guide</h4>
+            </div>
+            <div class="modal-body projectParagraph">
+                <img src="t1.png" class="projectImage">
+                <b>Description</b></br>
+                It is not always easy to know where you want to go next when you are planing on taking a step outside
+                of your comfort zone and explore the world. With Travler's Guide you get information about a few
+                destinations worth exploring by getting information, see images and hear songs from the destination
+                presented to you.
+
+                </br></br><b>Specifications</b>
+                </br>The project was done in Python and the program and design was all made by me.
+                The project was an assignment in a course in multimedia programming at Stockholm University.
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-lg viewProjectButton" onclick="location.href = 'https://github.com/laijnaloo/TravelersGuide'">Preview code on GitHub</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Modal for Petshop-->
+<div class="modal fade" id="showPetshop" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header modalHeader">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title albumName">Petshop</h4>
+            </div>
+            <div class="modal-body projectParagraph">
+                <img src="petshop.png" class="projectImage">
+                <b>Description</b></br>
+                Are you planing on selling or buying an animal? Then do it at Petshop! Here the goal is to make it
+                as easy as possible to get your animal a new loving home or finding a new family member of your own.
+                With a few clicks you can get an account and add a new ad and reach out to thousands of potential
+                buyers or, if you are interested in looking at a few furry friends, just scroll down and look through
+                all the animals that for the moment is looking for a new loving home.
+
+                </br>This project is still under development and thereby it is not fully functional for the moment and many links
+
+                </br></br><b>Specifications</b>
+                </br>The project was done in Javascript, HTML, CSS and Bootstrap and the program and design was all made by me.
+                The project is a spare time project.
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-lg viewProjectButton" onclick="location.href = 'https://laijnaloo.github.io/Petshop/index.html'">Preview code on GitHub</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>
