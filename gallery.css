@@ -13,6 +13,8 @@ html {
     display: inline-block;
     margin-left: 3%;
     background: #262525;
+    border: none;
+    padding: 0;
 }
 
 .albumContainer:hover {
@@ -130,3 +132,4 @@ a:active {
         padding-left: 5%;
     }
 }
+
